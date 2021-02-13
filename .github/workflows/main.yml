@@ -1,0 +1,53 @@
+on: push
+
+env:
+  LANGUAGE: pt-br # Not necessary to set, as default values are already set in code.
+  NODE_ENV: test
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout current branch
+        uses: actions/checkout@v2
+      - name: cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ./node_modules
+          key: node_modules-${{ hashFiles('**/package-lock.json') }}
+      - name: install dependencies
+        run: npm ci # Clean/faster install of dependencies.
+      - name: run unit/functional tests
+        run: npm run test:ci
+        env:
+          NODE_ENV: test
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          files: ./coverage/lcov.info
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
+
+  # build:
+  #   runs-on: ubuntu-latest
+  #   needs: test
+  #   steps:
+  #     - name: log into dockerhub to later push docker images
+  #       uses: docker/login-action@v1
+  #       with:
+  #         username: ${{ secrets.SECRET_DOCKERHUB_USERNAME }}
+  #         password: ${{ secrets.SECRET_DOCKERHUB_TOKEN }}
+
+  #     - name: checkout current branch
+  #       uses: actions/checkout@v2
+
+  #     - name: build docker image, tag it and push to dockerhub/heroku registries
+  #       env:
+  #         DOCKER_IMAGE_NAME: 'scaffold-nodejs/${{ env.APP_NAME }}:${{ github.sha }}'
+  #       run: |
+  #         docker build -t $DOCKER_IMAGE_NAME .
+  #         docker push $DOCKER_IMAGE_NAME
+
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   needs: build
