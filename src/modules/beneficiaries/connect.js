@@ -1,6 +1,7 @@
 const {
 	createBeneficiaryResolver,
 	deleteBeneficiaryResolver,
+	findBeneficiaryByIdResolver,
 	findBeneficiariesResolver,
 } = require('./resolvers');
 
@@ -10,5 +11,8 @@ exports.connect = (app) => {
 		.get(findBeneficiariesResolver)
 		.post(createBeneficiaryResolver);
 
-	app.route('/beneficiaries/:id').delete(deleteBeneficiaryResolver);
+	app
+		.route('/beneficiaries/:id')
+		.delete(deleteBeneficiaryResolver)
+		.get(findBeneficiaryByIdResolver);
 };

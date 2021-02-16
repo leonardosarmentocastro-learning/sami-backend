@@ -9,7 +9,7 @@
 
 ```sh
 curl -X GET \
-http://localhost:50645/beneficiaries \
+http://localhost:50977/beneficiaries \
 -H 'accept-language: pt-br'
 ```
 
@@ -40,26 +40,26 @@ Body:
   {
     "dependents": [],
     "plan": "STANDARD",
-    "birthDate": "2021-02-16T19:40:59.088Z",
+    "birthDate": "2021-02-16T19:57:53.488Z",
     "name": "Ronaldo",
-    "cpf": "78374802286",
+    "cpf": "33458602364",
     "rg": "00.111.222-3",
-    "createdAt": "2021-02-16T19:40:59.112Z",
-    "updatedAt": "2021-02-16T19:40:59.112Z",
+    "createdAt": "2021-02-16T19:57:53.513Z",
+    "updatedAt": "2021-02-16T19:57:53.513Z",
     "dependentsCount": 0,
-    "id": "602c1fcbc922558f576d2a9e"
+    "id": "602c23c1f1ff8397ad429c12"
   },
   {
     "dependents": [],
     "plan": "STANDARD",
-    "birthDate": "2021-02-16T19:40:59.118Z",
+    "birthDate": "2021-02-16T19:57:53.520Z",
     "name": "Ronaldo",
-    "cpf": "05458618025",
+    "cpf": "76216574485",
     "rg": "99.888.777-6",
-    "createdAt": "2021-02-16T19:40:59.123Z",
-    "updatedAt": "2021-02-16T19:40:59.123Z",
+    "createdAt": "2021-02-16T19:57:53.525Z",
+    "updatedAt": "2021-02-16T19:57:53.525Z",
     "dependentsCount": 0,
-    "id": "602c1fcbc922558f576d2a9f"
+    "id": "602c23c1f1ff8397ad429c13"
   }
 ]
 ```
@@ -68,7 +68,7 @@ Body:
 
 ```sh
 curl -X GET \
-http://localhost:50645/beneficiaries \
+http://localhost:50977/beneficiaries \
 -H 'accept-language: pt-br'
 ```
 

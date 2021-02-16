@@ -12,11 +12,11 @@
 
 ```sh
 curl -X POST \
-http://localhost:50650/beneficiaries \
+http://localhost:50987/beneficiaries \
 -d '{
-  "birthDate": "2021-02-16T19:40:59.956Z",
+  "birthDate": "2021-02-16T19:57:55.174Z",
   "name": "Ronaldo",
-  "cpf": "86707334476",
+  "cpf": "48871463536",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }' \
@@ -41,9 +41,9 @@ Body:
 
 ```
 {
-  "birthDate": "2021-02-16T19:40:59.956Z",
+  "birthDate": "2021-02-16T19:57:55.174Z",
   "name": "Ronaldo",
-  "cpf": "86707334476",
+  "cpf": "48871463536",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }
@@ -61,14 +61,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "birthDate": "2021-02-16T19:40:59.956Z",
+  "birthDate": "2021-02-16T19:57:55.174Z",
   "name": "Ronaldo",
-  "cpf": "86707334476",
+  "cpf": "48871463536",
   "rg": "00.111.222-3",
-  "createdAt": "2021-02-16T19:41:00.005Z",
-  "updatedAt": "2021-02-16T19:41:00.005Z",
+  "createdAt": "2021-02-16T19:57:55.218Z",
+  "updatedAt": "2021-02-16T19:57:55.218Z",
   "dependentsCount": 0,
-  "id": "602c1fcbd9ea6e8f58547d74"
+  "id": "602c23c32c814697b2bf67b0"
 }
 ```
 
@@ -76,11 +76,11 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:50650/beneficiaries \
+http://localhost:50987/beneficiaries \
 -d '{
   "birthDate": "",
   "name": "Ronaldo",
-  "cpf": "14574847492",
+  "cpf": "06860356316",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }' \
@@ -107,7 +107,7 @@ Body:
 {
   "birthDate": "",
   "name": "Ronaldo",
-  "cpf": "14574847492",
+  "cpf": "06860356316",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }
@@ -133,11 +133,11 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:50650/beneficiaries \
+http://localhost:50987/beneficiaries \
 -d '{
-  "birthDate": "2021-02-16T19:41:00.046Z",
+  "birthDate": "2021-02-16T19:57:55.255Z",
   "name": "",
-  "cpf": "36812400785",
+  "cpf": "14306686361",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }' \
@@ -162,9 +162,9 @@ Body:
 
 ```
 {
-  "birthDate": "2021-02-16T19:41:00.046Z",
+  "birthDate": "2021-02-16T19:57:55.255Z",
   "name": "",
-  "cpf": "36812400785",
+  "cpf": "14306686361",
   "rg": "00.111.222-3",
   "plan": "STANDARD"
 }
@@ -190,9 +190,9 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:50650/beneficiaries \
+http://localhost:50987/beneficiaries \
 -d '{
-  "birthDate": "2021-02-16T19:41:00.056Z",
+  "birthDate": "2021-02-16T19:57:55.263Z",
   "name": "Ronaldo",
   "cpf": "",
   "rg": "00.111.222-3",
@@ -219,7 +219,7 @@ Body:
 
 ```
 {
-  "birthDate": "2021-02-16T19:41:00.056Z",
+  "birthDate": "2021-02-16T19:57:55.263Z",
   "name": "Ronaldo",
   "cpf": "",
   "rg": "00.111.222-3",
@@ -247,11 +247,11 @@ Body:
 
 ```sh
 curl -X POST \
-http://localhost:50650/beneficiaries \
+http://localhost:50987/beneficiaries \
 -d '{
-  "birthDate": "2021-02-16T19:41:00.066Z",
+  "birthDate": "2021-02-16T19:57:55.273Z",
   "name": "Ronaldo",
-  "cpf": "64458583689",
+  "cpf": "48462673690",
   "rg": "",
   "plan": "STANDARD"
 }' \
@@ -276,9 +276,9 @@ Body:
 
 ```
 {
-  "birthDate": "2021-02-16T19:41:00.066Z",
+  "birthDate": "2021-02-16T19:57:55.273Z",
   "name": "Ronaldo",
-  "cpf": "64458583689",
+  "cpf": "48462673690",
   "rg": "",
   "plan": "STANDARD"
 }
