@@ -46,7 +46,8 @@
     "messageformat": "^2.3.0",
     "mongoose": "^5.11.16",
     "morgan": "^1.9.1",
-    "upash": "^1.0.2"
+    "upash": "^1.0.2",
+    "validator": "^13.5.2"
   },
   "ava": {
     "require": [
@@ -89,6 +90,10 @@
           "argsIgnorePattern": "t",
           "ignoreRestSiblings": true
         }
+      ],
+      "ava/no-import-test-files": [
+        "error",
+        { "files": ["**/*.test.js"] }
       ]
     }
   }

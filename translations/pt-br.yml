@@ -1,3 +1,4 @@
+BENEFICIARIES_ERROR_USER_NOT_FOUND: Beneficiário "{beneficiaryId}" não encontrado.
 SHARED_ERROR_CPF_IS_INVALID: O cpf "{cpf}" é inválido.
 SHARED_ERROR_EMAIL_INVALID: O email "{email}" é inválido.
 SHARED_ERROR_RG_IS_INVALID: O rg "{rg}" é inválido.
