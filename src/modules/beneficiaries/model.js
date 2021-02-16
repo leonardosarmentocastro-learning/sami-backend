@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const dayjs = require('dayjs');
 
 const { physicalPersonSchema } = require('../../shared/schemas');
 
@@ -17,8 +18,12 @@ const beneficiariesSchema = new mongoose.Schema(
 			enum: Object.values(BENEFICIARIES_PLAN_TYPES),
 			default: BENEFICIARIES_PLAN_TYPES.BASIC,
 		},
+		createdAt: String,
+		updatedAt: String,
 	},
-	{ timestamps: true }
+	{
+		timestamps: { currentTime: () => dayjs().toISOString() },
+	}
 );
 
 // Virtuals - https://mongoosejs.com/docs/api.html#document_Document-toObject
