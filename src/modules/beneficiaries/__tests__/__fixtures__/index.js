@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('./valid-beneficiary-fixture'),
+	...require('./valid-beneficiary-fixture'),
 };

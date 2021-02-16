@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('./connect'),
-  ...require('./translate'),
-  ...require('./translations'),
+	...require('./connect'),
+	...require('./translate'),
+	...require('./translations'),
 };

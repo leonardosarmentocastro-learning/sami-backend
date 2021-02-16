@@ -16,9 +16,9 @@ const $middlewares = (app) => ({
 	},
 
 	i18n() {
-		// NOTE: must come first to fill "req.locale" for all subsequent middlewares.
-    i18n.connect(app);
-  },
+		// NOTE: must come first to fill "req.locale" for all subsequent middlewares.
+		i18n.connect(app);
+	},
 	bodyParser() {
 		app.use(bodyParser.json());
 		app.use(bodyParser.urlencoded({ extended: false }));

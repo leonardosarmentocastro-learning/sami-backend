@@ -1,12 +1,16 @@
 const { translate } = require('../../i18n');
 
-const beneficiaryTranslatedValidationError = (req, res, { err, beneficiaryDoc }) => {
-  const transformedBeneficiary = beneficiaryDoc.toObject();
-  const error = translate.error(err, req.locale, transformedBeneficiary);
+const beneficiaryTranslatedValidationError = (
+	request,
+	response,
+	{ err, beneficiaryDoc }
+) => {
+	const transformedBeneficiary = beneficiaryDoc.toObject();
+	const error = translate.error(err, request.locale, transformedBeneficiary);
 
-  return res.status(500).json(error);
+	return response.status(500).json(error);
 };
 
 module.exports = {
-  beneficiaryTranslatedValidationError
+	beneficiaryTranslatedValidationError,
 };

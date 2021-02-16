@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('./create-beneficiary-resolver'),
+	...require('./create-beneficiary-resolver'),
 };

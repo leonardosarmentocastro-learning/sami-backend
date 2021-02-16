@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('./physical-person-schema'),
+	...require('./physical-person-schema'),
 };
