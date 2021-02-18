@@ -12,7 +12,7 @@ Teste para "fullstack software engineer"
 **Funcionalidades contempladas:**
 
 * Ambiente de Dockerizado (desenvolvimento, teste funcional no CI e construção de imagem para produção)
-* Testes unitários/funcionais com cobertura de teste e geração automática de documentação da API
+* Testes unitários/funcionais com cobertura de teste e geração automática de documentação da API (pasta `/docs`)
 * Arranjo arquitetural bem definida que visa a modularização de código, com correção automática de ortografia, tornando-o de mais fácil manutenção
 
 **Como utilizar:**
