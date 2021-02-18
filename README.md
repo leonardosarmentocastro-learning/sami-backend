@@ -2,9 +2,9 @@
 
 # `sami-node`
 
-Teste para "fullstack software engineer"
-
 [![codecov](https://codecov.io/gh/leonardosarmentocastro-learning/sami-backend/branch/main/graph/badge.svg?token=WV9DYX5IGX)](https://codecov.io/gh/leonardosarmentocastro-learning/sami-backend)
+
+Teste para "fullstack software engineer"
 
 | Candidato | Leonardo Sarmento de Castro |
 |-|-|
