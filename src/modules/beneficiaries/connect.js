@@ -3,6 +3,7 @@ const {
 	deleteBeneficiaryResolver,
 	findBeneficiaryByIdResolver,
 	findBeneficiariesResolver,
+	updateBeneficiaryResolver,
 } = require('./resolvers');
 
 exports.connect = (app) => {
@@ -14,5 +15,6 @@ exports.connect = (app) => {
 	app
 		.route('/beneficiaries/:id')
 		.delete(deleteBeneficiaryResolver)
-		.get(findBeneficiaryByIdResolver);
+		.get(findBeneficiaryByIdResolver)
+		.put(updateBeneficiaryResolver);
 };

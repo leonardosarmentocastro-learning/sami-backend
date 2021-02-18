@@ -9,13 +9,13 @@
 
 ```sh
 curl -X GET \
-http://localhost:50982/beneficiaries/602c23c2683bfb97b16d6630 \
+http://localhost:53049/beneficiaries/602e8bd29ff69b1b3e04c4b2 \
 -H 'accept-language: pt-br'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602c23c2683bfb97b16d6630`
+Path: `/beneficiaries/602e8bd29ff69b1b3e04c4b2`
 
 Query parameters: _empty_
 
@@ -39,14 +39,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "birthDate": "2021-02-16T19:57:54.321Z",
+  "createdAt": "2021-02-18T15:46:26.443Z",
+  "updatedAt": "2021-02-18T15:46:26.443Z",
+  "birthDate": "2021-02-18T15:46:26.568Z",
   "name": "Ronaldo",
-  "cpf": "83768044645",
+  "cpf": "71761841270",
   "rg": "00.111.222-3",
-  "createdAt": "2021-02-16T19:57:54.354Z",
-  "updatedAt": "2021-02-16T19:57:54.354Z",
   "dependentsCount": 0,
-  "id": "602c23c2683bfb97b16d6630"
+  "id": "602e8bd29ff69b1b3e04c4b2"
 }
 ```
 
@@ -54,13 +54,13 @@ Body:
 
 ```sh
 curl -X GET \
-http://localhost:50982/beneficiaries/602c23c2683bfb97b16d6631 \
+http://localhost:53049/beneficiaries/602e8bd29ff69b1b3e04c4b3 \
 -H 'accept-language: pt-br'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602c23c2683bfb97b16d6631`
+Path: `/beneficiaries/602e8bd29ff69b1b3e04c4b3`
 
 Query parameters: _empty_
 
@@ -84,6 +84,6 @@ Body:
 {
   "code": "BENEFICIARIES_ERROR_USER_NOT_FOUND",
   "field": "id",
-  "message": "Beneficiário \"602c23c2683bfb97b16d6631\" não encontrado."
+  "message": "Beneficiário \"602e8bd29ff69b1b3e04c4b3\" não encontrado."
 }
 ```

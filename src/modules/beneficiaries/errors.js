@@ -5,7 +5,7 @@ const BENEFICIARIES_ERROR_USER_NOT_FOUND = {
 	field: 'id',
 };
 
-const benenficiaryNotFoundError = (request, response) =>
+const beneficiaryNotFoundError = (request, response) =>
 	response.status(500).json(
 		translate.error(BENEFICIARIES_ERROR_USER_NOT_FOUND, request.locale, {
 			beneficiaryId: request.params.id,
@@ -24,7 +24,7 @@ const beneficiaryTranslatedValidationError = (
 };
 
 module.exports = {
-	benenficiaryNotFoundError,
+	beneficiaryNotFoundError,
 	beneficiaryTranslatedValidationError,
 	BENEFICIARIES_ERROR_USER_NOT_FOUND,
 };

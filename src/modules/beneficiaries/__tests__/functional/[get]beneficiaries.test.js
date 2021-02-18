@@ -20,7 +20,7 @@ test.before('prepare: start api / connect to database', async (t) => {
 	await database.connect();
 });
 test.after('create api docs (if enabled)', (t) => {
-	theOwl.createDocs();
+	return theOwl.createDocs();
 });
 test.after.always('teardown', (t) => {
 	return closeApiOpenedOnRandomPort(t);

@@ -3,4 +3,5 @@ module.exports = {
 	...require('./delete-beneficiary-resolver'),
 	...require('./find-beneficiaries-by-id-resolver'),
 	...require('./find-beneficiaries-resolver'),
+	...require('./update-beneficiary-resolver'),
 };

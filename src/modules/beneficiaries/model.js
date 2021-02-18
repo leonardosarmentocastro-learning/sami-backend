@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const dayjs = require('dayjs');
 
-const { physicalPersonSchema } = require('../../shared/schemas');
+const { commonSchema, physicalPersonSchema } = require('../../shared/schemas');
 
 const BENEFICIARIES_PLAN_TYPES = {
 	BASIC: 'BASIC',
@@ -10,21 +9,14 @@ const BENEFICIARIES_PLAN_TYPES = {
 };
 
 // Schema definitions
-const beneficiariesSchema = new mongoose.Schema(
-	{
-		dependents: [mongoose.Types.ObjectId],
-		plan: {
-			type: String,
-			enum: Object.values(BENEFICIARIES_PLAN_TYPES),
-			default: BENEFICIARIES_PLAN_TYPES.BASIC,
-		},
-		createdAt: String,
-		updatedAt: String,
+const beneficiariesSchema = new mongoose.Schema({
+	dependents: [mongoose.Types.ObjectId],
+	plan: {
+		type: String,
+		enum: Object.values(BENEFICIARIES_PLAN_TYPES),
+		default: BENEFICIARIES_PLAN_TYPES.BASIC,
 	},
-	{
-		timestamps: { currentTime: () => dayjs().toISOString() },
-	}
-);
+});
 
 // Virtuals - https://mongoosejs.com/docs/api.html#document_Document-toObject
 const transform = (_doc, returnValue) => {
@@ -39,6 +31,7 @@ const transform = (_doc, returnValue) => {
 
 // Setup
 beneficiariesSchema.add(physicalPersonSchema);
+beneficiariesSchema.add(commonSchema);
 beneficiariesSchema.set('toObject', {
 	transform,
 	virtuals: true, // Expose "id" instead of "_id".
