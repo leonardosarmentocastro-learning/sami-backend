@@ -4,10 +4,10 @@
 
 Teste para "fullstack software engineer"
 
-**Leonardo Sarmento de Castro**
-
-Github: https://github.com/leonardosarmentocastro
-LinkedIn: https://www.linkedin.com/in/leonardo-sarmento-de-castro-a249b945/
+| Candidato | Leonardo Sarmento de Castro |
+|-|-|
+| Github | https://github.com/leonardosarmentocastro |
+| LinkedIn | https://www.linkedin.com/in/leonardo-sarmento-de-castro-a249b945/ |
 
 **Funcionalidades contempladas:**
 
