@@ -1,8 +1,8 @@
+![](https://www.samisaude.com.br/static/media/ogo-sami-saude.57f4d5b7.svg)
+
 # `sami-node`
 
 Teste para "fullstack software engineer"
-
-![](https://www.samisaude.com.br/static/media/ogo-sami-saude.57f4d5b7.svg)
 
 **Leonardo Sarmento de Castro**
 
