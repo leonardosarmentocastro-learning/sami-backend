@@ -32,3 +32,10 @@ npm run test:unit # rodas os testes unitários
 npm run test:with-coverage # roda os testes exibindo um quadro de porcentagem de cobertura de teste da aplicação
 ```
 
+##Ambiente de produção:**
+
+A aplicação está deployada no Heroku, e pode ser acessada através da URL:
+
+https://sami-backend.herokuapp.com/
+
+Para utilizar o CRUD, copie qualquer instrução cURL contida na [pasta de documentação da API `/docs`](https://github.com/leonardosarmentocastro-learning/sami-backend/tree/main/docs)) e substitua o endereço `localhost` pelo acima.

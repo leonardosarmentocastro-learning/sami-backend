@@ -9,13 +9,13 @@
 
 ```sh
 curl -X DELETE \
-http://localhost:53039/beneficiaries/602e8bd0d265721b3c58d78c \
+http://localhost:55137/beneficiaries/602ea89de7147b37ec6c16f8 \
 -H 'accept-language: pt-br'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd0d265721b3c58d78c`
+Path: `/beneficiaries/602ea89de7147b37ec6c16f8`
 
 Query parameters: _empty_
 
@@ -39,7 +39,7 @@ Body: _empty_
 
 ```sh
 curl -X DELETE \
-http://localhost:53039/beneficiaries/123 \
+http://localhost:55137/beneficiaries/123 \
 -H 'accept-language: pt-br'
 ```
 

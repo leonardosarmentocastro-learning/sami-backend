@@ -16,17 +16,17 @@
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc1d \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b06 \
 -d '{
   "plan": "BASIC"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc1d`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b06`
 
 Query parameters: _empty_
 
@@ -57,14 +57,14 @@ Body:
 {
   "dependents": [],
   "plan": "BASIC",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.380Z",
-  "birthDate": "2021-02-18T15:46:28.316Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.616Z",
+  "birthDate": "2021-02-18T17:49:21.553Z",
   "name": "Ronaldo",
-  "cpf": "88886018649",
+  "cpf": "10426663004",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc1d"
+  "id": "602ea8a19590eb37f77a1b06"
 }
 ```
 
@@ -72,17 +72,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc1e \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b07 \
 -d '{
   "plan": "PREMIUM"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc1e`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b07`
 
 Query parameters: _empty_
 
@@ -113,14 +113,14 @@ Body:
 {
   "dependents": [],
   "plan": "PREMIUM",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.422Z",
-  "birthDate": "2021-02-18T15:46:28.403Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.659Z",
+  "birthDate": "2021-02-18T17:49:21.639Z",
   "name": "Ronaldo",
-  "cpf": "08823102405",
+  "cpf": "24664061790",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc1e"
+  "id": "602ea8a19590eb37f77a1b07"
 }
 ```
 
@@ -128,17 +128,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc1f \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b08 \
 -d '{
   "plan": "STANDARD"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc1f`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b08`
 
 Query parameters: _empty_
 
@@ -169,14 +169,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.463Z",
-  "birthDate": "2021-02-18T15:46:28.431Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.679Z",
+  "birthDate": "2021-02-18T17:49:21.664Z",
   "name": "Ronaldo",
-  "cpf": "34566366367",
+  "cpf": "55850114130",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc1f"
+  "id": "602ea8a19590eb37f77a1b08"
 }
 ```
 
@@ -184,19 +184,19 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc20 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b09 \
 -d '{
   "dependents": [
-    "602e8bd4e17fef1b4068dc1c"
+    "602ea8a19590eb37f77a1b05"
   ]
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc20`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b09`
 
 Query parameters: _empty_
 
@@ -212,7 +212,7 @@ Body:
 ```
 {
   "dependents": [
-    "602e8bd4e17fef1b4068dc1c"
+    "602ea8a19590eb37f77a1b05"
   ]
 }
 ```
@@ -228,17 +228,17 @@ Body:
 ```
 {
   "dependents": [
-    "602e8bd4e17fef1b4068dc1c"
+    "602ea8a19590eb37f77a1b05"
   ],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.500Z",
-  "birthDate": "2021-02-18T15:46:28.473Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.712Z",
+  "birthDate": "2021-02-18T17:49:21.686Z",
   "name": "Ronaldo",
-  "cpf": "34146452546",
+  "cpf": "83407343183",
   "rg": "00.111.222-3",
   "dependentsCount": 1,
-  "id": "602e8bd4e17fef1b4068dc20"
+  "id": "602ea8a19590eb37f77a1b09"
 }
 ```
 
@@ -246,17 +246,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc21 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b0a \
 -d '{
-  "birthDate": "2021-02-18T15:46:28.246Z"
+  "birthDate": "2021-02-18T17:49:21.480Z"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc21`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b0a`
 
 Query parameters: _empty_
 
@@ -271,7 +271,7 @@ Body:
 
 ```
 {
-  "birthDate": "2021-02-18T15:46:28.246Z"
+  "birthDate": "2021-02-18T17:49:21.480Z"
 }
 ```
 
@@ -287,14 +287,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.535Z",
-  "birthDate": "2021-02-18T15:46:28.246Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.747Z",
+  "birthDate": "2021-02-18T17:49:21.480Z",
   "name": "Ronaldo",
-  "cpf": "55320557183",
+  "cpf": "80434544264",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc21"
+  "id": "602ea8a19590eb37f77a1b0a"
 }
 ```
 
@@ -302,17 +302,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc22 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b0b \
 -d '{
-  "cpf": "20851854605"
+  "cpf": "48074811697"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc22`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b0b`
 
 Query parameters: _empty_
 
@@ -327,7 +327,7 @@ Body:
 
 ```
 {
-  "cpf": "20851854605"
+  "cpf": "48074811697"
 }
 ```
 
@@ -343,14 +343,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.566Z",
-  "birthDate": "2021-02-18T15:46:28.543Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.775Z",
+  "birthDate": "2021-02-18T17:49:21.754Z",
   "name": "Ronaldo",
-  "cpf": "20851854605",
+  "cpf": "48074811697",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc22"
+  "id": "602ea8a19590eb37f77a1b0b"
 }
 ```
 
@@ -358,17 +358,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc23 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b0c \
 -d '{
   "name": "João da Silva"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc23`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b0c`
 
 Query parameters: _empty_
 
@@ -399,14 +399,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.594Z",
-  "birthDate": "2021-02-18T15:46:28.574Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.806Z",
+  "birthDate": "2021-02-18T17:49:21.783Z",
   "name": "João da Silva",
-  "cpf": "74736356898",
+  "cpf": "78885426204",
   "rg": "00.111.222-3",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc23"
+  "id": "602ea8a19590eb37f77a1b0c"
 }
 ```
 
@@ -414,17 +414,17 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc24 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b0d \
 -d '{
   "rg": "01-123-321-0"
 }' \
--H 'accept-language: pt-br'
+-H 'accept-language: pt-br' \
 -H 'content-type: application/json'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc24`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b0d`
 
 Query parameters: _empty_
 
@@ -455,14 +455,14 @@ Body:
 {
   "dependents": [],
   "plan": "STANDARD",
-  "createdAt": "2021-02-18T15:46:28.191Z",
-  "updatedAt": "2021-02-18T15:46:28.628Z",
-  "birthDate": "2021-02-18T15:46:28.605Z",
+  "createdAt": "2021-02-18T17:49:21.428Z",
+  "updatedAt": "2021-02-18T17:49:21.837Z",
+  "birthDate": "2021-02-18T17:49:21.815Z",
   "name": "Ronaldo",
-  "cpf": "17775183004",
+  "cpf": "32522304372",
   "rg": "01-123-321-0",
   "dependentsCount": 0,
-  "id": "602e8bd4e17fef1b4068dc24"
+  "id": "602ea8a19590eb37f77a1b0d"
 }
 ```
 
@@ -470,13 +470,13 @@ Body:
 
 ```sh
 curl -X PUT \
-http://localhost:53062/beneficiaries/602e8bd4e17fef1b4068dc26 \
+http://localhost:55161/beneficiaries/602ea8a19590eb37f77a1b0f \
 -H 'accept-language: pt-br'
 ```
 
 **Request** :egg:
 
-Path: `/beneficiaries/602e8bd4e17fef1b4068dc26`
+Path: `/beneficiaries/602ea8a19590eb37f77a1b0f`
 
 Query parameters: _empty_
 
@@ -500,6 +500,6 @@ Body:
 {
   "code": "BENEFICIARIES_ERROR_USER_NOT_FOUND",
   "field": "id",
-  "message": "Beneficiário \"602e8bd4e17fef1b4068dc26\" não encontrado."
+  "message": "Beneficiário \"602ea8a19590eb37f77a1b0f\" não encontrado."
 }
 ```

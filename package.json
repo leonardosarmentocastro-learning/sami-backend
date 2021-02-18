@@ -28,7 +28,7 @@
     "husky": "^4.3.8",
     "nodemon": "^1.19.0",
     "nyc": "^14.1.1",
-    "the-owl": "1.1.1",
+    "the-owl": "1.1.2",
     "xo": "^0.37.1"
   },
   "dependencies": {
@@ -93,7 +93,11 @@
       ],
       "ava/no-import-test-files": [
         "error",
-        { "files": ["**/*.test.js"] }
+        {
+          "files": [
+            "**/*.test.js"
+          ]
+        }
       ]
     }
   }
