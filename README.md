@@ -1,12 +1,19 @@
-# `scaffold-node`
+# `sami-node`
 
-Fundação arquitetural para projetos em Node.js
+Teste para "fullstack software engineer"
+
+![](https://www.samisaude.com.br/static/media/ogo-sami-saude.57f4d5b7.svg)
+
+**Leonardo Sarmento de Castro**
+
+Github: https://github.com/leonardosarmentocastro
+LinkedIn: https://www.linkedin.com/in/leonardo-sarmento-de-castro-a249b945/
 
 **Funcionalidades contempladas:**
 
 * Ambiente de Dockerizado (desenvolvimento, teste funcional no CI e construção de imagem para produção)
 * Testes unitários/funcionais com cobertura de teste e geração automática de documentação da API
-* Arranjo arquitetural bem definida que visa a modularização de código, com correção automática de ortografia,  tornando-o de mais fácil manutenção
+* Arranjo arquitetural bem definida que visa a modularização de código, com correção automática de ortografia, tornando-o de mais fácil manutenção
 
 **Como utilizar:**
 
