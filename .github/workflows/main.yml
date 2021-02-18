@@ -1,12 +1,21 @@
 on: push
 
 env:
-  LANGUAGE: pt-br # Not necessary to set, as default values are already set in code.
+  MONGODB_DATABASE_NAME: db-ci
+  MONGODB_HOST: 0.0.0.0 # localhost
   NODE_ENV: test
+  LANGUAGE: pt-br # Not necessary to set, as default values are already set in code.
+  # APP_NAME: create-nodejs-app
+  # APP_PROCESS_TYPE: web
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:latest
+        ports:
+          - 27017:27017
     steps:
       - name: checkout current branch
         uses: actions/checkout@v2
@@ -17,7 +26,7 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-lock.json') }}
       - name: install dependencies
         run: npm ci # Clean/faster install of dependencies.
-      - name: run unit/functional tests
+      - name: run unit/functional tests using mongodb
         run: npm run test:ci
         env:
           NODE_ENV: test
